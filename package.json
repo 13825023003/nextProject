@@ -1,10 +1,10 @@
 {
-  "name": "nextjs-fullstack-app-template-zn",
+  "name": "name",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "test": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "test": "prettier --write . next build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -19,9 +19,10 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
     "@types/react-dom": "^18",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
     "husky": "^8.0.0",
@@ -29,5 +30,9 @@
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/13825023003/nextProject.git",
+  "author": "{3258374944@qq.com} <3258374944@qq.com>",
+  "license": "MIT"
 }
